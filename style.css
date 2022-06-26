@@ -7,6 +7,18 @@ margin: 0;
 padding: 0;
 -webkit-box-sizing: inherit;
 box-sizing: inherit;
+border: 1px black solid;
 }
 
 
+/* compartments */
+
+header {
+  display: grid;
+  width: 70%;
+  grid-template-columns: 1fr 1fr;
+  background-color: lightgrey;
+  justify-content: center;
+  margin: 0 auto;
+
+}

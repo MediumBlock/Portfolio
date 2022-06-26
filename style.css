@@ -22,3 +22,26 @@ header {
   margin: 0 auto;
 
 }
+
+.img-all {
+  margin: 0 auto;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.project-container {
+  display: absolute;
+  top: 50px;
+}
+
+.project-content {
+  display: flex;
+}
+

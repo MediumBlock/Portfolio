@@ -27,6 +27,10 @@ header {
   margin: 0 auto;
 }
 
+.img-all img {
+  width: auto;
+}
+
 main {
   width: 80%;
   margin: 0 auto;
@@ -36,12 +40,38 @@ h1 {
   text-align: center;
 }
 
-.project-container {
-  display: absolute;
-  top: 50px;
-}
 
 .project-content {
   display: flex;
+  overflow: hidden;
+  width: 100%;
 }
 
+.project-content img {
+  width: 100%;
+}
+
+.project-content img[src*='dulu'] {
+}
+
+.project-content img[src*='constructorb'] {
+}
+
+.project-content img[src*='fotomat'] {
+}
+
+.project-content img[src*='white'] {
+  position: absolute;
+  transform: rotate(90deg);
+  width: 5%;
+  bottom: 5%;
+  left: 10%;
+}
+
+.project-content img[src*='right'] {
+  position: absolute;
+  transform: rotate(270deg);
+  width: 5%;
+  bottom: 5%;
+  right: 10%;
+}

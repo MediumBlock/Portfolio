@@ -7,7 +7,6 @@ margin: 0;
 padding: 0;
 -webkit-box-sizing: inherit;
 box-sizing: inherit;
-border: 1px black solid;
 }
 
 
@@ -23,12 +22,143 @@ header {
 
 }
 
-.img-all {
-  margin: 0 auto;
+.img-me {
+  justify-self: end;
+}
+
+
+.img-me img {
+  width: 80%;
+  height: auto;
 }
 
 .img-all img {
+  margin: 0 auto;
+}
+
+.img-all .still  {
   width: auto;
+}
+
+.img-all .move {
+  position: absolute;
+}
+
+img.glasses {
+  width: 12%;
+  height: auto;
+  right: 55%;
+  top: 22%;
+  transform: rotate(10deg);
+  animation: thugLyfe1 2s;
+}
+
+img.joint {
+  width: 3%;
+  height: auto;
+  right: 59%;
+  top: 33.5%;
+  transform: rotate(230deg);
+  animation: thugLyfe2 2s;
+  z-index: 5;
+}
+
+
+img.chain {
+  width: 6%;
+  height: auto;
+  right: 59%;
+  animation: thugLyfe3 2s;
+  z-index: 2;
+  top: 32.5%;
+
+}
+
+img.money {
+  width: 6%;
+  height: auto;
+  right: 70%;
+  animation: thugLyfe4 2s;
+  z-index: 2;
+  top: 50.5%;
+}
+
+img.left {
+  right: 75%;
+}
+
+img.center {
+  top: 45.5%;
+  z-index: 5;
+  animation: thugLyfe5 2s;
+  
+}
+
+img.right {
+  right: 68%;
+}
+
+
+/* img animations*/
+
+@keyframes thugLyfe1 {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+ 
+  100% {
+    top: 22%;
+    opacity: 1;
+  }
+}
+
+@keyframes thugLyfe2 {
+  0% {
+    right: 45%;
+    opacity: 0;
+  }
+ 
+  100% {
+    right: 59%;
+    opacity: 1;
+  }
+}
+
+@keyframes thugLyfe3 {
+  0% {
+    top: 45%;
+    opacity: 0;
+  }
+ 
+  100% {
+    top: 32.5%;
+    opacity: 1;
+  }
+}
+
+@keyframes thugLyfe4 {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+ 
+  100% {
+    top: 50.5%;
+    opacity: 1;
+  }
+}
+
+@keyframes thugLyfe5 {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+ 
+  100% {
+    top: 45.5%;
+    opacity: 1;
+  }
 }
 
 main {
@@ -74,4 +204,12 @@ h1 {
   width: 5%;
   bottom: 5%;
   right: 10%;
+}
+
+.construct {
+  display: none;
+}
+
+.fotomat {
+  display: none;
 }

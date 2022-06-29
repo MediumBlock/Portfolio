@@ -19,7 +19,13 @@ header {
   background-color: lightgrey;
   justify-content: center;
   margin: 0 auto;
+  padding-top: 2rem;
 
+}
+
+.head-about p {
+  padding: 0.5rem;
+  padding-left: 1.5rem;
 }
 
 .img-me {
@@ -30,6 +36,9 @@ header {
 .img-me img {
   width: 80%;
   height: auto;
+  position: relative;
+  left: 3rem;
+  top: 3rem;
 }
 
 .img-all img {
@@ -37,7 +46,9 @@ header {
 }
 
 .img-all .still  {
-  width: auto;
+  width: 100%;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
 }
 
 .img-all .move {
@@ -170,6 +181,17 @@ h1 {
   text-align: center;
 }
 
+.item-header {
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+  background-color: lightskyblue;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.item-header h5 {
+  padding-top: 1rem;
+}
 
 .project-content {
   display: flex;
@@ -179,6 +201,16 @@ h1 {
 
 .project-content img {
   width: 100%;
+}
+
+p.dulu,
+p.construct,
+p.fotomat {
+  padding: 1rem;
+  text-align: center;
+  background-color: lightblue;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .project-content img[src*='dulu'] {
@@ -196,6 +228,7 @@ h1 {
   width: 5%;
   bottom: 5%;
   left: 10%;
+  opacity: 0.5;
 }
 
 .project-content img[src*='right'] {
@@ -206,10 +239,27 @@ h1 {
   right: 10%;
 }
 
+.right-two {
+  display: none;
+  z-index: 5;
+}
+
+.right-three {
+  display: none;
+  z-index: 5;
+}
+
 .construct {
   display: none;
 }
 
 .fotomat {
   display: none;
+}
+
+footer p {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  background-color: lightseagreen;
 }

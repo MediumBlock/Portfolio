@@ -239,6 +239,16 @@ p.fotomat {
   right: 10%;
 }
 
+.left-two {
+  display: none;
+
+}
+
+.left-three {
+  display: none;
+
+}
+
 .right-two {
   display: none;
   z-index: 5;

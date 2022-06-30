@@ -189,8 +189,8 @@ h1 {
   margin: 0 auto;
 }
 
-.item-header h5 {
-  padding-top: 1rem;
+.item-header h3 {
+  padding-bottom: 1rem;
 }
 
 .project-content {
@@ -203,15 +203,7 @@ h1 {
   width: 100%;
 }
 
-p.dulu,
-p.construct,
-p.fotomat {
-  padding: 1rem;
-  text-align: center;
-  background-color: lightblue;
-  width: 95%;
-  margin: 0 auto;
-}
+
 
 .project-content img[src*='dulu'] {
 }
@@ -265,6 +257,7 @@ p.fotomat {
 
 .fotomat {
   display: none;
+
 }
 
 footer p {
@@ -272,4 +265,48 @@ footer p {
   width: 60%;
   text-align: center;
   background-color: lightseagreen;
+}
+
+
+
+p.dulu,
+p.construct,
+p.fotomat {
+  padding: 1rem;
+  text-align: center;
+  background-color: lightblue;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#dulup {
+  padding: 1rem;
+  text-align: center;
+  background-color: lightblue;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#constructp {
+  padding: 1rem;
+  text-align: center;
+  background-color: lightblue;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#fotomatp {
+  padding: 1rem;
+  text-align: center;
+  background-color: lightblue;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#paraholder {
+  padding: 1rem;
+  text-align: center;
+  background-color: lightblue;
+  width: 95%;
+  margin: 0 auto;
 }

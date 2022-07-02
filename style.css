@@ -7,10 +7,16 @@ margin: 0;
 padding: 0;
 -webkit-box-sizing: inherit;
 box-sizing: inherit;
+border: 1px black solid;
 }
 
 
 /* compartments */
+
+
+h1 {
+  width: 70%;
+}
 
 header {
   display: grid;
@@ -26,19 +32,19 @@ header {
 .head-about p {
   padding: 0.5rem;
   padding-left: 1.5rem;
+
 }
 
 .img-me {
-  justify-self: end;
+  margin: 0 auto;
+  width: 100%
 }
 
 
 .img-me img {
-  width: 80%;
-  height: auto;
-  position: relative;
-  left: 3rem;
-  top: 3rem;
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
 }
 
 .img-all img {
@@ -46,70 +52,132 @@ header {
 }
 
 .img-all .still  {
-  width: 100%;
+  position: relative;
   padding: 0.5rem;
   padding-left: 1.5rem;
+  width: 100%;
 }
 
-.img-all .move {
-  position: absolute;
+#duluimg {
+  width: 450px;
 }
+
+
 
 img.glasses {
-  width: 12%;
-  height: auto;
-  right: 55%;
-  top: 22%;
+  width: 150px;
+  position: relative;
+  bottom: 175px;
+  right: 220px;
   transform: rotate(10deg);
-  animation: thugLyfe1 2s;
 }
 
 img.joint {
-  width: 3%;
-  height: auto;
-  right: 59%;
-  top: 33.5%;
-  transform: rotate(230deg);
-  animation: thugLyfe2 2s;
+  position: relative;
+  width: 50px;
+  bottom: 260px;
+  left: 330px;
   z-index: 5;
+  transform: rotate(240deg);
 }
 
 
 img.chain {
-  width: 6%;
-  height: auto;
-  right: 59%;
-  animation: thugLyfe3 2s;
-  z-index: 2;
-  top: 32.5%;
-
+  position: relative;
+  width: 85px;
+  bottom: 205px;
+  left: 240px;
 }
 
 img.money {
-  width: 6%;
-  height: auto;
-  right: 70%;
-  animation: thugLyfe4 2s;
-  z-index: 2;
-  top: 50.5%;
+  position: relative;
+  width: 70px;
 }
 
 img.left {
-  right: 75%;
+  position: relative;
+  bottom: 140px;
+  left: 30px;
 }
 
 img.center {
-  top: 45.5%;
-  z-index: 5;
-  animation: thugLyfe5 2s;
+  position: relative;
+  bottom: 140px;
+  left: 30px;
   
 }
 
 img.right {
-  right: 68%;
+  position: relative;
+  bottom: 170px;
+  left: -90px;
+}
+
+@media only screen and (max-width: 1820px) {
+  img.glasses {
+    bottom: 288px;
+    left: 270px;
+  }
+
+  img.joint {
+    bottom: 259px;
+    left: 170px;
+  }
+
+  img.chain {
+    bottom: 200px;
+    left: 90px;
+}
+  img.left {
+  bottom: 140px;
+  left: -60px;
+}
+
+  img.center {
+  bottom: 140px;
+  left: -200px;
+  
+}
+
+  img.right {
+  bottom: 170px;
+  left: -240px;
+}
+
+}
+
+@media only screen and (max-width: 1479px) {
+  img.right {
+    bottom: 240px;
+    left: 200px;
+  }
+
+}
+
+@media only screen and (max-width: 1269px) {
+
+header {
+justify-items: center;
+width: 100%;
+}
+
+img.right {
+  bottom: 170px;
+  left: -250px;
+}
+
+.img-me img {
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
 }
 
 
+
+}
+
+
+}
 /* img animations*/
 
 @keyframes thugLyfe1 {
@@ -205,15 +273,6 @@ h1 {
 
 
 
-.project-content img[src*='dulu'] {
-}
-
-.project-content img[src*='constructorb'] {
-}
-
-.project-content img[src*='fotomat'] {
-}
-
 .project-content img[src*='white'] {
   position: absolute;
   transform: rotate(90deg);
@@ -268,45 +327,71 @@ footer p {
 }
 
 
-
-p.dulu,
-p.construct,
-p.fotomat {
-  padding: 1rem;
-  text-align: center;
-  background-color: lightblue;
-  width: 95%;
-  margin: 0 auto;
-}
-
-#dulup {
-  padding: 1rem;
-  text-align: center;
-  background-color: lightblue;
-  width: 95%;
-  margin: 0 auto;
-}
-
-#constructp {
-  padding: 1rem;
-  text-align: center;
-  background-color: lightblue;
-  width: 95%;
-  margin: 0 auto;
-}
-
-#fotomatp {
-  padding: 1rem;
-  text-align: center;
-  background-color: lightblue;
-  width: 95%;
-  margin: 0 auto;
-}
-
 #paraholder {
   padding: 1rem;
   text-align: center;
   background-color: lightblue;
   width: 95%;
   margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 869px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+  
+  img.glasses {
+    bottom: 180px;
+    left: -220px;
+  }
+  
+  img.joint {
+    bottom: 145px;
+    left: -310px;
+  }
+  
+  img.chain {
+    bottom: 100px;
+    left: -400px;
+  }
+  img.left {
+  bottom: 100px;
+  left: 110px;
+  }
+  
+  img.center {
+  bottom: 100px;
+  left: 100px;
+  
+  }
+  
+  img.right {
+  bottom: 130px;
+  left: 0px;
+  }
+  
+  .head-about p {
+    width: 70%;
+  }
+  
+  main {
+    width: 100%;
+  }
+  
+  .img-me img {
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+  }
+  
+  .img-all .still  {
+    padding: 0;
+    padding-left: 0;
+    margin-bottom: -70px;
+  }
+  
+  #duluimg {
+    width: 350px;
+  }
 }

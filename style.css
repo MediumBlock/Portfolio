@@ -7,7 +7,6 @@ margin: 0;
 padding: 0;
 -webkit-box-sizing: inherit;
 box-sizing: inherit;
-border: 1px black solid;
 }
 
 
@@ -144,6 +143,10 @@ img.right {
   left: -240px;
 }
 
+h1 {
+  margin: 0 auto;
+}
+
 }
 
 @media only screen and (max-width: 1479px) {
@@ -177,7 +180,6 @@ img.right {
 }
 
 
-}
 /* img animations*/
 
 @keyframes thugLyfe1 {
@@ -338,37 +340,41 @@ footer p {
 
 @media only screen and (max-width: 869px) {
   header {
-    grid-template-columns: 1fr;
+    grid-template-columns: 600px;
   }
   
   img.glasses {
-    bottom: 180px;
-    left: -220px;
+    bottom: 10px;
+    left: 280px;
   }
   
   img.joint {
-    bottom: 145px;
-    left: -310px;
+    bottom: -35px;
+    left: 190px;
+    margin-right: 340px;
   }
   
   img.chain {
-    bottom: 100px;
-    left: -400px;
+    bottom: 30px;
+    left: 300px;
+    margin-right: 300px;
+
   }
+
   img.left {
-  bottom: 100px;
-  left: 110px;
+  bottom: -70px;
+  left: -290px;
   }
   
   img.center {
-  bottom: 100px;
-  left: 100px;
+  bottom: -70px;
+  left: -290px;
   
   }
   
   img.right {
-  bottom: 130px;
-  left: 0px;
+  bottom: 30px;
+  left: 140px;
   }
   
   .head-about p {
@@ -380,18 +386,91 @@ footer p {
   }
   
   .img-me img {
-    width: 100%;
-    max-width: 300px;
-    min-width: 200px;
+    display: none;
   }
   
   .img-all .still  {
     padding: 0;
     padding-left: 0;
-    margin-bottom: -70px;
+    margin-bottom: -270px;
   }
   
   #duluimg {
-    width: 350px;
+    width: 500px;
   }
+
+  #paraholder {
+    width: 100%;
+  }
+
+  .item-header {
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+  }
+
+  footer p {
+    width: 100%;
+  }
+
+  .head-about p {
+      width: 80%;
+      height: 75px;
+    
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    grid-template-columns: 400px;
+    padding-top: 0.2rem;
+  }
+
+  #duluimg {
+    margin-top: 20px;
+    width: 400px;
+  }
+
+  .img-all .still  {
+
+    margin-bottom: -320px;
+  }
+
+  #paraholder {
+    padding: 0;
+  }
+
+  img.glasses {
+    bottom: -89px;
+    left: 210px;
+  }
+  
+  img.joint {
+    bottom: -74px;
+    left: 270px;
+    margin-right: 340px;
+  }
+  
+  img.chain {
+    bottom: -15px;
+    left: 240px;
+    margin-right: 300px;
+
+  }
+
+  img.left {
+  bottom: 0px;
+  left: 100px;
+  }
+  
+  img.center {
+  bottom: 0px;
+  left: 100px;
+  
+  }
+  
+  img.right {
+  bottom: 30px;
+  left: 0px;
+  }
+
 }

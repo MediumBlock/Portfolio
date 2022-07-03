@@ -7,10 +7,34 @@ margin: 0;
 padding: 0;
 -webkit-box-sizing: inherit;
 box-sizing: inherit;
+Font-Family: 'Cabin', Sans-Serif;
+font-size: 1rem;
 }
 
 /* fonts */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  Font-Family: 'Roboto Condensed', Sans-Serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* styles */
+
+body {
+  background-color: #fff9f3;
+}
 /* compartments */
 
 
@@ -22,7 +46,7 @@ header {
   display: grid;
   width: 70%;
   grid-template-columns: 1fr 1fr;
-  background-color: lightgrey;
+  background-color: #fff3e6;
   justify-content: center;
   margin: 0 auto;
   padding-top: 2rem;
@@ -136,7 +160,7 @@ h1 {
   text-align: center;
   padding: 2rem 0 2rem 0;
   background-color: lightskyblue;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -157,20 +181,21 @@ h1 {
 
 
 .project-content img[src*='white'] {
-  position: absolute;
+  position: relative;
   transform: rotate(90deg);
-  width: 5%;
-  bottom: 5%;
-  left: 10%;
+  height: 100px;
+  top: 300px;
+  margin-right: -100px;
   opacity: 0.5;
 }
 
 .project-content img[src*='right'] {
-  position: absolute;
+  position: relative;
   transform: rotate(270deg);
-  width: 5%;
-  bottom: 5%;
-  right: 10%;
+  height: 100px;
+  top: 300px;
+  left: 93.5%;
+  margin-right: -100px;
 }
 
 .left-two {
@@ -206,7 +231,7 @@ footer p {
   margin: 0 auto;
   width: 60%;
   text-align: center;
-  background-color: lightseagreen;
+  background-color: #ffffff;
 }
 
 
@@ -603,6 +628,16 @@ h1 {
   margin: 0 auto;
 }
 
+.project-content img[src*='white'] {
+  top: 200px;
+}
+
+.project-content img[src*='right'] {
+  top: 200px;
+  left: 90%;
+}
+
+
 }
 
 @media only screen and (max-width: 1479px) {
@@ -632,6 +667,17 @@ img.right {
   width: 100%;
   max-width: 500px;
   min-width: 300px;
+}
+
+.project-content img[src*='white'] {
+
+  top: 150px;
+
+}
+
+.project-content img[src*='right'] {
+
+  top: 150px;
 }
 
 }
@@ -726,6 +772,13 @@ img.right {
       height: 75px;
     
     }
+
+
+    
+    .project-content img[src*='right'] {
+
+      left: 84%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -791,6 +844,16 @@ img.right {
   left: 0px;
   animation: thugLyfe6-right 1.8s;
 
+  }
+
+  .project-content img[src*='white'] {
+
+    top: 100px;
+
+  }
+  
+  .project-content img[src*='right'] {
+    top: 100px;
   }
 
 }

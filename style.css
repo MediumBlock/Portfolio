@@ -9,6 +9,7 @@ padding: 0;
 box-sizing: inherit;
 }
 
+/* fonts */
 
 /* compartments */
 
@@ -69,6 +70,8 @@ img.glasses {
   bottom: 175px;
   right: 220px;
   transform: rotate(10deg);
+  animation: thugLyfe1-glasses 2s;
+  
 }
 
 img.joint {
@@ -78,6 +81,7 @@ img.joint {
   left: 330px;
   z-index: 5;
   transform: rotate(240deg);
+  animation: thugLyfe1-joint 2s;
 }
 
 
@@ -86,6 +90,8 @@ img.chain {
   width: 85px;
   bottom: 205px;
   left: 240px;
+  animation: thugLyfe1-chain 2s;
+
 }
 
 img.money {
@@ -97,12 +103,15 @@ img.left {
   position: relative;
   bottom: 140px;
   left: 30px;
+  animation: thugLyfe1-left 2s;
+
 }
 
 img.center {
   position: relative;
   bottom: 140px;
   left: 30px;
+  animation: thugLyfe1-center 1.8s;
   
 }
 
@@ -110,136 +119,8 @@ img.right {
   position: relative;
   bottom: 170px;
   left: -90px;
-}
+  animation: thugLyfe1-right 1.65s;
 
-@media only screen and (max-width: 1820px) {
-  img.glasses {
-    bottom: 288px;
-    left: 270px;
-  }
-
-  img.joint {
-    bottom: 259px;
-    left: 170px;
-  }
-
-  img.chain {
-    bottom: 200px;
-    left: 90px;
-}
-  img.left {
-  bottom: 140px;
-  left: -60px;
-}
-
-  img.center {
-  bottom: 140px;
-  left: -200px;
-  
-}
-
-  img.right {
-  bottom: 170px;
-  left: -240px;
-}
-
-h1 {
-  margin: 0 auto;
-}
-
-}
-
-@media only screen and (max-width: 1479px) {
-  img.right {
-    bottom: 240px;
-    left: 200px;
-  }
-
-}
-
-@media only screen and (max-width: 1269px) {
-
-header {
-justify-items: center;
-width: 100%;
-}
-
-img.right {
-  bottom: 170px;
-  left: -250px;
-}
-
-.img-me img {
-  width: 100%;
-  max-width: 500px;
-  min-width: 300px;
-}
-
-
-
-}
-
-
-/* img animations*/
-
-@keyframes thugLyfe1 {
-  0% {
-    top: 0%;
-    opacity: 0;
-  }
- 
-  100% {
-    top: 22%;
-    opacity: 1;
-  }
-}
-
-@keyframes thugLyfe2 {
-  0% {
-    right: 45%;
-    opacity: 0;
-  }
- 
-  100% {
-    right: 59%;
-    opacity: 1;
-  }
-}
-
-@keyframes thugLyfe3 {
-  0% {
-    top: 45%;
-    opacity: 0;
-  }
- 
-  100% {
-    top: 32.5%;
-    opacity: 1;
-  }
-}
-
-@keyframes thugLyfe4 {
-  0% {
-    top: 0%;
-    opacity: 0;
-  }
- 
-  100% {
-    top: 50.5%;
-    opacity: 1;
-  }
-}
-
-@keyframes thugLyfe5 {
-  0% {
-    top: 0%;
-    opacity: 0;
-  }
- 
-  100% {
-    top: 45.5%;
-    opacity: 1;
-  }
 }
 
 main {
@@ -338,6 +219,423 @@ footer p {
 }
 
 
+/* img animations*/
+
+@keyframes thugLyfe1-glasses {
+  0% {
+    bottom: 300px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 175px;
+    opacity: 1;
+  }
+
+}
+
+@keyframes thugLyfe1-joint {
+  0% {
+    left: 450px;
+    opacity: 0;
+  }
+ 
+  100% {
+    left: 330px;
+    opacity: 1;
+  }
+
+}
+
+@keyframes thugLyfe1-chain {
+  0% {
+    bottom: 100px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 205px;
+    opacity: 1;
+  }
+
+} 
+
+@keyframes thugLyfe1-left {
+  0% {
+    bottom: 440px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 140px;
+      opacity: 1;
+  }
+  
+}
+
+
+
+@keyframes thugLyfe1-center {
+  0% {
+    bottom: 550px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 140px;
+    opacity: 1;
+  }
+}
+
+@keyframes thugLyfe1-right {
+  0% {
+    bottom: 540px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 170px;
+    opacity: 1;
+  }
+}
+
+@keyframes thugLyfe2-glasses {
+  0% {
+    bottom: 440px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 288px;
+    opacity: 1;
+  }
+
+}
+
+@keyframes thugLyfe2-joint {
+  0% {
+    left: 350px;
+    opacity: 0;
+  }
+ 
+  100% {
+    left: 170px;
+    opacity: 1;
+  }
+
+}
+
+@keyframes thugLyfe2-chain {
+  0% {
+    bottom: 80px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 200px;
+    opacity: 1;
+  }
+
+} 
+
+@keyframes thugLyfe2-left {
+  0% {
+    bottom: 440px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 140px;
+      opacity: 1;
+  }
+  
+}
+
+
+
+@keyframes thugLyfe2-center {
+  0% {
+    bottom: 550px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 140px;
+    opacity: 1;
+  }
+}
+
+@keyframes thugLyfe2-right {
+  0% {
+    bottom: 540px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 170px;
+    opacity: 1;
+  }
+}
+
+@keyframes thugLyfe3-right {
+  0% {
+    bottom: 550px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 240px;
+    opacity: 1;
+  }
+}
+
+@keyframes thugLyfe4-right {
+  0% {
+    bottom: 440px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 170px;
+    opacity: 1;
+  }
+}
+
+@keyframes thugLyfe5-glasses {
+  0% {
+    bottom: 150px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 10px;
+    opacity: 1;
+  }
+
+}
+
+@keyframes thugLyfe5-joint {
+  0% {
+    left: 350px;
+    opacity: 0;
+  }
+ 
+  100% {
+    left: 190px;
+    opacity: 1;
+  }
+
+}
+
+@keyframes thugLyfe5-chain {
+  0% {
+    bottom: -100px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+} 
+
+@keyframes thugLyfe5-left {
+  0% {
+    bottom: 100px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: -70px;
+    opacity: 1;
+  }
+  
+}
+
+
+
+@keyframes thugLyfe5-center {
+  0% {
+    bottom: 210px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: -70px;
+    opacity: 1;
+  }
+}
+
+@keyframes thugLyfe5-right {
+  0% {
+    bottom: 220px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes thugLyfe6-glasses {
+  0% {
+    bottom: 109px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: -89px;
+    opacity: 1;
+  }
+
+}
+
+@keyframes thugLyfe6-joint {
+  0% {
+    left: 440px;
+    opacity: 0;
+  }
+ 
+  100% {
+    left: 270px;
+    opacity: 1;
+  }
+
+}
+
+@keyframes thugLyfe6-chain {
+  0% {
+    bottom: -150px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: -15px;
+    opacity: 1;
+  }
+
+} 
+
+@keyframes thugLyfe6-left {
+  0% {
+    bottom: 150px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 0px;
+    opacity: 1;
+  }
+  
+}
+
+
+
+@keyframes thugLyfe6-center {
+  0% {
+    bottom: 160px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes thugLyfe6-right {
+  0% {
+    bottom: 330px;
+    opacity: 0;
+  }
+ 
+  100% {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1820px) {
+  img.glasses {
+    bottom: 288px;
+    left: 270px;
+    animation: thugLyfe2-glasses 2s;
+  }
+
+  img.joint {
+    bottom: 259px;
+    left: 170px;
+    animation: thugLyfe2-joint 2s;
+  }
+
+  img.chain {
+    bottom: 200px;
+    left: 90px;
+    animation: thugLyfe2-chain 2s;
+
+}
+  img.left {
+  bottom: 140px;
+  left: -60px;
+  animation: thugLyfe2-left 2s;
+
+}
+
+  img.center {
+  bottom: 140px;
+  left: -200px;
+  animation: thugLyfe2-center 1.8s;
+  
+}
+
+  img.right {
+  bottom: 170px;
+  left: -240px;
+  animation: thugLyfe2-right 1.7s;
+
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+}
+
+@media only screen and (max-width: 1479px) {
+  img.right {
+    bottom: 240px;
+    left: 200px;
+    animation: thugLyfe3-right 1.7s;
+  }
+
+}
+
+@media only screen and (max-width: 1269px) {
+
+header {
+justify-items: center;
+width: 100%;
+}
+
+img.right {
+  bottom: 170px;
+  left: -250px;
+  animation: thugLyfe4-right 1.7s;
+
+}
+
+.img-me img {
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+}
+
 @media only screen and (max-width: 869px) {
   header {
     grid-template-columns: 600px;
@@ -346,35 +644,46 @@ footer p {
   img.glasses {
     bottom: 10px;
     left: 280px;
+    animation: thugLyfe5-glasses 2s;
+
   }
   
   img.joint {
     bottom: -35px;
     left: 190px;
     margin-right: 340px;
+    animation: thugLyfe5-joint 2s;
+
   }
   
   img.chain {
     bottom: 30px;
     left: 300px;
     margin-right: 300px;
+    animation: thugLyfe5-chain 2s;
 
   }
 
   img.left {
   bottom: -70px;
   left: -290px;
+  animation: thugLyfe5-left 2s;
+
   }
   
   img.center {
   bottom: -70px;
   left: -290px;
+  animation: thugLyfe5-center 1.7s;
+
   
   }
   
   img.right {
   bottom: 30px;
   left: 140px;
+  animation: thugLyfe5-right 1.8s;
+
   }
   
   .head-about p {
@@ -442,35 +751,47 @@ footer p {
   img.glasses {
     bottom: -89px;
     left: 210px;
+    animation: thugLyfe6-glasses 2s;
+
   }
   
   img.joint {
     bottom: -74px;
     left: 270px;
     margin-right: 340px;
+    animation: thugLyfe6-joint 2s;
+
   }
   
   img.chain {
     bottom: -15px;
     left: 240px;
     margin-right: 300px;
+    animation: thugLyfe6-chain 2s;
 
   }
 
   img.left {
   bottom: 0px;
   left: 100px;
+  animation: thugLyfe6-left 2s;
+
   }
   
   img.center {
   bottom: 0px;
   left: 100px;
+  animation: thugLyfe6-center 1.7s;
+
   
   }
   
   img.right {
   bottom: 30px;
   left: 0px;
+  animation: thugLyfe6-right 1.8s;
+
   }
 
 }
+
